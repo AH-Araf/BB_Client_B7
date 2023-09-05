@@ -38,7 +38,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
+        // console.log(email, password)
         signIn(email, password)
         .then(result =>{
             const user = result.user;
@@ -90,7 +90,7 @@ const Login = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
+                            <input disabled={disable} className="btn btn-primary" type="submit" value="Login" />
                         </div>
                         <p><small>New Here? <Link to='/signup'><span className='text-blue-700 font-bold'>Create an account</span></Link></small></p>
                     </form>
